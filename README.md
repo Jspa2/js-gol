@@ -1,4 +1,6 @@
 # js-gol
+![js-gol](screenshots/logo.png)
+
 Conway's Game of Life in JavaScript!
 
 **Features**
