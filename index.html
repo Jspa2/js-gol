@@ -9,45 +9,47 @@
 	<title>Game of Life</title>
 </head>
 <body>
-	<h3>Game of Life</h3>
-	<canvas id="canvas"></canvas>
-	<div id="button-bar">
-		<div id="play-bar">
-			<button class="material-symbols-outlined" id="play-pause" aria-label="Play/Pause">
-				play_arrow
+	<main>
+		<h3>Game of Life</h3>
+		<canvas id="canvas"></canvas>
+		<div id="button-bar">
+			<div id="play-bar">
+				<button class="material-symbols-outlined" id="play-pause" aria-label="Play/Pause">
+					play_arrow
+				</button>
+				<input type="range" id="speed" aria-label="Speed" min="0" max="100" value="50">
+			</div>
+			<div class="spacer"></div>
+			<button id="clear" role="button">
+				<span class="material-symbols-outlined">
+					cancel
+				</span>
+				Clear all
 			</button>
-			<input type="range" id="speed" aria-label="Speed" min="0" max="100" value="50">
+			<button id="randomise" role="button">
+				<span class="material-symbols-outlined">
+					refresh
+				</span>
+				Randomise
+			</button>
+			<button id="advance" role="button">
+				<span class="material-symbols-outlined">
+					navigate_next
+				</span>
+				Advance
+			</button>
 		</div>
-		<div class="spacer"></div>
-		<button id="clear" role="button">
-			<span class="material-symbols-outlined">
-				cancel
-			</span>
-			Clear all
-		</button>
-		<button id="randomise" role="button">
-			<span class="material-symbols-outlined">
-				refresh
-			</span>
-			Randomise
-		</button>
-		<button id="advance" role="button">
-			<span class="material-symbols-outlined">
-				navigate_next
-			</span>
-			Advance
-		</button>
-	</div>
-	<div id="instructions">
-		<strong>Click anywhere on the map to draw cells.</strong>
-		<p><strong>Advance:</strong> Advances to the next generation.</p>
-		<p><strong>Randomise:</strong> Randomises the entire map.</p>
-		<p>Click the play button to automatically advance. Drag the slider to change the speed.</p>
-	</div>
-	<a id="source" href="https://github.com/JsphA/js-gol">
-		<img src="assets/github.png" alt="GitHub">
-		Source code on GitHub
-	</a>
+		<div id="instructions">
+			<strong>Click anywhere on the map to draw cells.</strong>
+			<p><strong>Advance:</strong> Advances to the next generation.</p>
+			<p><strong>Randomise:</strong> Randomises the entire map.</p>
+			<p>Click the play button to automatically advance. Drag the slider to change the speed.</p>
+		</div>
+		<a id="source" href="https://github.com/JsphA/js-gol">
+			<img src="assets/github.png" alt="GitHub">
+			Source code on GitHub
+		</a>
+	</main>
 	<script src="config.js"></script>
 	<script src="game.js"></script>
 </body>
