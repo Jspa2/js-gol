@@ -6,10 +6,9 @@
 }
 
 /* Main */
-main {
+html {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
 }
 
 body {
@@ -70,7 +69,11 @@ button {
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+	html {
+		display: block;
+	}
+
 	body {
 		padding: 1em;
 	}
