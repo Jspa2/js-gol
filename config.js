@@ -24,5 +24,8 @@ const config = {
 	},
 
 	// The maximum playback interval allowed.
-	maxInterval: 200
+	maxInterval: 200,
+
+	// The density of random generation.
+	randomDensity: 0.5
 }

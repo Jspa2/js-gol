@@ -83,7 +83,7 @@ advanceButton.addEventListener('click', () => {
 randomiseButton.addEventListener('click', () => {
 	for (cellX = 0; cellX < config.width; cellX++) {
 		for (cellY = 0; cellY < config.height; cellY++) {
-			gol.cells[cellX][cellY] = Math.random() > 0.5;
+			gol.cells[cellX][cellY] = Math.random() < config.randomDensity;
 		}
 	}
 	gol.render();
